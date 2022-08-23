@@ -5,7 +5,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, run the development server:
 
 ```bash
-# 激活 husky， 使 git钩子生效
+# 激活 husky， 使git钩子生效
 npm run prepare 
 npm run dev
 # or
