@@ -1,6 +1,11 @@
 const withAntdLess = require('next-plugin-antd-less');
 
+const isProd = process.env.NODE_ENV === 'production';
+
+
 module.exports = withAntdLess({
+    basePath: '/quote/admin',
+    assetPrefix: isProd ? '/quote/admin' : '',
     modifyVars: {'@primary-color': '#69b1f4'},
     lessVarsFilePath: './styles/variables.less',
     lessVarsFilePathAppendToEndOfContent: false,
